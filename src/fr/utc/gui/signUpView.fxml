@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #ccc;">
+               <children>
+                  <Label fx:id="lb_title" text="Create your account" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label text="Mandatory*" />
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <StackPane prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Username*" />
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="tf_username" />
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="90.0">
+               <children>
+                  <StackPane prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Password*" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                  </StackPane>
+                  <StackPane prefHeight="50.0" prefWidth="200.0">
+                     <children>
+                        <VBox spacing="4.0">
+                           <children>
+                              <PasswordField fx:id="tf_password" />
+                              <PasswordField fx:id="tf_password2" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" top="8.0" />
+                     </padding>
+                  </StackPane>
+               </children>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #f7f7f7;">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Firstname" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="tf_firstname" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Lastname" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="tf_lastname" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Date of birth" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <DatePicker fx:id="dp_dateOfBirth" prefHeight="25.0" prefWidth="221.0" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Avatar" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="50.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btn_avatar" mnemonicParsing="false" onAction="#chooseAvatar" text="Choose a picture" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <StackPane prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #dedede;">
+               <children>
+                  <Button fx:id="btn_create" mnemonicParsing="false" onAction="#create" text="Create" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
